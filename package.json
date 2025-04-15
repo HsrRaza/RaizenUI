@@ -1,0 +1,26 @@
+{
+  "name": "raizenui",
+  "version": "1.0.0",
+  "description": "ui-components library",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build:dev": "rollup -c --enviroment NODE_ENV:development ",
+    "build": "rollup -c --enviroment NODE_ENV:development"
+  },
+  "keywords": [
+    "ui",
+    "components"
+  ],
+  "author": "Hassan Raza",
+  "license": "MIT",
+
+  "dependencies": {
+    "rollup": "^4.40.0"
+     
+
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
