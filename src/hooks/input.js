@@ -1,6 +1,6 @@
 class RzInput extends HTMLElement{
     static get observedAttributes(){
-        return ['type', 'size', 'placeholder','mode' ]
+        return ['type', 'size', 'placeholder','mode' ,'width', 'height']
 
     }
 
@@ -18,7 +18,10 @@ class RzInput extends HTMLElement{
     getStyles(){
         const mode = this.getAttribute('mode') || 'light';
         const size = this.getAttribute('size') || 'medium';
-        const isDark = mode === 'dark'
+        const isDark = mode === 'dark';
+
+        const width = this.getAttribute('width') || '20%';
+        const height= this.getAttribute('height') || 'auto';
 
         const sizeStyles ={
             small : 'padding: 6px 10px; font-size: 12px' ,
@@ -28,7 +31,8 @@ class RzInput extends HTMLElement{
 
         return `
          input{
-         width: 100%;
+         width: ${width};
+         height:${height}
          ${sizeStyles[size]}
          border: 1px solid ${isDark ? '#555': '$ccc'};
          border-radius: 6px;
@@ -61,4 +65,5 @@ class RzInput extends HTMLElement{
     }
     
 }
+customElements.define('rz-input', RzInput);
 export default RzInput
