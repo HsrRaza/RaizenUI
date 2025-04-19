@@ -65,5 +65,4 @@ class RzInput extends HTMLElement{
     }
     
 }
-customElements.define('rz-input', RzInput);
 export default RzInput
