@@ -1,1 +1,110 @@
-Welcome Page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/docs.css">
+    <link rel="stylesheet" href="styles/docs.res.css">
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-name">
+            <div class="name">
+                <span>RaizenUI</span>
+                <button>FeedBack</button>
+            </div>
+
+        </div>
+        <div class="container">
+
+
+            <div class="content">
+
+                <div class="left-container">
+                    <div class="buttons">
+
+                        <button class="tab-btn" onclick="showContent(0)">Quickstart</button>
+
+                        <button class="tab-btn" onclick="showContent(1)">buttom</button>
+
+
+                        <button class="tab-btn" onclick="showContent(2)">card</button>
+
+
+                        <button class="tab-btn" onclick="showContent(3)">nav</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="right-container">
+                    <div class="tabs-ctn" id="Quickstart">
+                        <h1>Setup Instructions</h1>
+                        <h3>Welcome to the beta version of RaizenUI — a dark-mode-first, <br> framework-agnostic UI component library
+                            built with custom HTML and JavaScript</h3>
+                        <p>Crafted for developers who love clean design and full control, RaizenUI is minimal, flexible,
+                            and plug-and-play with any modern frontend stack.</p>
+
+                        <span>
+
+                             ---"Built for the night — because not everything needs to be bright."
+                        </span>
+                        <br>
+
+                        <span>
+
+                            ---"Dark mode isn’t a theme here — it’s a philosophy."
+                        </span>
+                        <p class="p">This is an early beta release. The API, structure, and styles are still evolving. Your
+                            feedback and contributions will help shape the future of RaizenUI.</p>
+
+                            <h3>Via -CDN</h3>
+                            <div> 
+                                
+                            </div>
+                    </div>
+                    <div class="tabs-ctn" id="button">
+                        Welcome to button page
+                    </div>
+                    <div class="tabs-ctn" id="card">
+                        Welcome to card page
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+
+
+        // const tabBtn = document.querySelectorAll('.tab-btn');
+        // const tabCtn = document.querySelectorAll('.tabs-ctn');
+
+        function showContent(index) {
+            const tabBtn = document.querySelectorAll('.tab-btn');
+            const tabCtn = document.querySelectorAll('.tabs-ctn');
+            tabBtn.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+            });
+
+            tabCtn.forEach((content, i) => {
+                content.classList.toggle('active', i === index);
+            })
+        }
+        window.onload = () => showContent(0)
+
+
+    </script>
+    <script src="prism.js"></script>
+</body>
+
+</html>

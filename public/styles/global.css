@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
     background-color: #000000;
     background-image: radial-gradient(#2a2a2a 1px, #000000 1px);
     background-size: 20px 20px;
-     /* display: flex;  */
-    /* justify-content: center;  */
+    /* box-sizing: border-box; */
+   
     
 }
 .container {
@@ -77,10 +77,10 @@ nav ul li a:hover {
 .btn {
 
     color: #e5e5e5;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: none;
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.8rem;
     background-color: #7c3aed;
     transition: background-color 0.3s ease-in-out;
@@ -106,7 +106,6 @@ nav ul li a:hover {
 
 /* home page */
 .home {
-    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@ nav ul li a:hover {
 }
 
 .texting h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #e5e5e5;
     margin-bottom: 1rem;
@@ -205,7 +204,7 @@ nav ul li a:hover {
 }
 
 .texting p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #8b5cf6;
     font-family: "Manrope", sans-serif;
 }
@@ -224,10 +223,10 @@ nav ul li a:hover {
 
 .docs a {
     color: #e5e5e5;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     background: linear-gradient(to right, #7c3aed, #9c40ff);
     background-size: 200%;
