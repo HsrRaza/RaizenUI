@@ -1,5 +1,5 @@
 .vscode
-dist
+
 node_modules/
 
 raizenui-1.0.0*.tgz
