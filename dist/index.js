@@ -1,29 +1,60 @@
 class RzButton extends HTMLElement {
+  static get observedAttributes() { return ['variant']; }
+  
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
     this.render();
   }
-
+  
+  attributeChangedCallback() {
+    this.render();
+  }
+  
   render() {
+    const variant = this.getAttribute('variant') || 'primary';
+    
     this.shadowRoot.innerHTML = `
       <style>
-        button {
-          background-color: #ffffff;
-          color: #000000;
+        .rz-btn {
           padding: 0.6rem 1.2rem;
-          font-size: 1rem;
           border: none;
           border-radius: 6px;
+          font-size: 1rem;
           cursor: pointer;
-          transition: all 0.3s ease-in-out;
+          font-weight: 500;
+          transition: all 0.2s;
+          margin: 0.5rem;
+          display: inline-block;
         }
-
-        button:hover {
-          background-color: #f0f0f0;
+        
+        /* Primary (white bg + black text) */
+        .rz-btn--primary {
+          background: white;
+          color: black;
+          border: 1px solid #ddd;
         }
+        
+        /* Secondary (dark bg + white text) */
+        .rz-btn--secondary {
+          background: #333;
+          color: white;
+        }
+        
+        /* Blue (original style) */
+        .rz-btn--blue {
+          background: #1d4ed8;
+          color: white;
+        }
+        
+        /* Hover states */
+        .rz-btn--primary:hover { background: #f0f0f0; }
+        .rz-btn--secondary:hover { background: #444; }
+        .rz-btn--blue:hover { background: #1a43c2; }
       </style>
-      <button><slot>Click Me</slot></button>
+      <button class="rz-btn rz-btn--${variant}">
+        ${this.textContent || 'Click Me'}
+      </button>
     `;
   }
 }
@@ -96,7 +127,13 @@ class RzInput extends HTMLElement{
     
 }
 
-customElements.define('rz-button', RzButton);
+// customElements.define('rz-button', RzButton);
+
+if (!customElements.get('rz-button')) {
+    customElements.define('rz-button', RzButton);
+  }
+
+  
 customElements.define('rz-input', RzInput);
 
 export { RzButton, RzInput };
