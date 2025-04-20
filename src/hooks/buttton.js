@@ -28,26 +28,22 @@ class RzButton extends HTMLElement {
           display: inline-block;
         }
         
-        /* Primary (white bg + black text) */
         .rz-btn--primary {
           background: white;
           color: black;
           border: 1px solid #ddd;
         }
         
-        /* Secondary (dark bg + white text) */
         .rz-btn--secondary {
           background: #333;
           color: white;
         }
         
-        /* Blue (original style) */
         .rz-btn--blue {
           background: #1d4ed8;
           color: white;
         }
         
-        /* Hover states */
         .rz-btn--primary:hover { background: #f0f0f0; }
         .rz-btn--secondary:hover { background: #444; }
         .rz-btn--blue:hover { background: #1a43c2; }
@@ -59,11 +55,5 @@ class RzButton extends HTMLElement {
   }
 }
 
-// Safe element registration
-
-
-
-
-
-
-export default RzButton
+// Export the class WITHOUT registration here
+export default RzButton;

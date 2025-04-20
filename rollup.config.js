@@ -1,5 +1,8 @@
 import terser from "@rollup/plugin-terser";
 
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+
 
 const devMode = (process.env.NODE_ENV == 'development');
 console.log(`${devMode ? 'development ' : 'production ' } mode bundle`);
@@ -24,6 +27,17 @@ export default[
                     output: {quote_style: 1}
                 })
             ]
-        }
+        },
+        plugins: [
+            nodeResolve(),
+            commonjs()
+          ],
+          watch: {
+            clearScreen: false,
+            include: 'src/**',
+            exclude: 'node_modules/**',
+            buildDelay: 200 // Adds slight delay to avoid rapid rebuilds
+          }
+
     }
 ]

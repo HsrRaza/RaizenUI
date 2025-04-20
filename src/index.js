@@ -1,4 +1,4 @@
-import RzButton from "./hooks/buttton"
+import RzButton from "./hooks/buttton.js"
 import RzInput from "./hooks/input"
 
 
@@ -8,7 +8,7 @@ if (!customElements.get('rz-button')) {
     customElements.define('rz-button', RzButton);
   }
 
-  
+
 customElements.define('rz-input', RzInput);
 
 
