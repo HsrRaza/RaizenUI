@@ -8,3 +8,49 @@
     margin-bottom: 1rem;
     font-family: "Space Grotesk", sans-serif;
 }
+.demo{
+    width: 90%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+#context-card{
+    width: 90%;
+    height: 250px;
+    padding: 1rem;
+    /* background-color: #000; */
+    border-radius: 1rem;
+
+
+}
+#card h4{
+
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#context-card p{
+    font-size: .7rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+#context-card ul {
+    padding: .2rem;
+}
+#context-card ul li{
+    font-size: .7rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+
+}
+
+

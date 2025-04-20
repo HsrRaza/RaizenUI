@@ -30,12 +30,12 @@
             margin: 0;
         }
 
-        
+
 
         input {
             width: 80%;
             padding: 8px 12px;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             background: var(--input-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
@@ -45,6 +45,10 @@
             outline: 1px solid white;
         }
 
+        /* label {
+            margin-top: 0rem;
+        } */
+
         button {
             width: 80%;
             padding: 8px 12px;
@@ -52,8 +56,15 @@
             color: var(--text-color);
             border: 1px solid var(--border-color);
             cursor: pointer;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
+            margin-bottom: .2rem;
         }
+
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 0.8rem;
+          }
 
         button:hover {
             background: var(--hover-grey);
@@ -61,25 +72,26 @@
 
 
         .login-container {
-            height: 250px;
-        width: 200px;
-      padding: 1rem;
-      border: 1px solid var(--border-color);
-      border-radius: 0; /* Sharp corners for modern look */
-    }
-    
-    h2 {
-      text-align: center;
-      margin: 0 0 1.5rem 0;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
-        
+            height: 200px;
+            width: 200px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0;
+            /* Sharp corners for modern look */
+        }
+
+        h2 {
+            text-align: center;
+            /* margin: 0 0 1.5rem 0; */
+            margin-top: 0rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
     </style>
-        
-        
-        
-        
+
+
+
+
     <script type="module" src="./dist/index.js"></script>
 </head>
 
@@ -87,7 +99,7 @@
     <div class="box">
 
 
-        <!-- <div class="login-container">
+        <div class="login-container">
             <h2>Login</h2>
             <label for="name">Name
             </label>
@@ -99,9 +111,9 @@
             <input type="password" name="password" id="">
 
             <button>submit</button>
-        </div> -->
+        </div>
 
-        <rz-login-card></rz-login-card>
+        <!-- <rz-login-card></rz-login-card> -->
 
     </div>
 

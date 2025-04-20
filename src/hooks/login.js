@@ -14,7 +14,7 @@ class rzLoginCard extends HTMLElement {
           }
           
           .login-container {
-            height: 250px;
+            height: 200px;
             width: 200px;
             padding: 1rem;
             border: 1px solid var(--border-color);
@@ -41,7 +41,7 @@ class rzLoginCard extends HTMLElement {
           input {
             width: 80%;
             padding: 6px 10px;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
             background: var(--input-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
@@ -59,7 +59,7 @@ class rzLoginCard extends HTMLElement {
             color: var(--text-color);
             border: 1px solid var(--border-color);
             cursor: pointer;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             font-size: 0.9rem;
           }
           

@@ -12,14 +12,14 @@
     <!-- // button Css PAge -->
     <link rel="stylesheet" href="./styles/button.css">
 
-     <!--Card Css page --> 
-      
-     <link rel="stylesheet" href="./styles//card.css">
-      
+    <!--Card Css page -->
+
+    <link rel="stylesheet" href="./styles//card.css">
+
 
     <!-- <script type="module" src="../dist/index.js"></script> -->
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/raizenui@1.0.4/dist/index.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/raizenui@1.0.6/dist/index.js"></script>
 
     <!-- <script type="module" src="https://cdn.jsdelivr.net/gh/HsrRaza/RaizenUI/dist/index.js"></script> -->
     <!-- <script type="module" src="https://cdn.jsdelivr.net/gh/HsrRaza/raizenui@1.0.4/dist/index.js"></script> -->
@@ -49,7 +49,7 @@
 
                         <button class="tab-btn" onclick="showContent(0)">Quickstart</button>
 
-                        <button class="tab-btn" onclick="showContent(1)">buttom</button>
+                        <button class="tab-btn" onclick="showContent(1)">button</button>
 
 
                         <button class="tab-btn" onclick="showContent(2)">card</button>
@@ -98,13 +98,13 @@
                         <h3>Buttons</h3 <p>"Built for the night — because not everything needs to be bright."</p>
 
                         <div class="showcase">
-                            
+
 
                             <!-- <rz-button>Default Primary</rz-button> -->
                             <rz-button variant="primary">Primary</rz-button>
                             <rz-button variant="secondary">Secondary</rz-button>
                             <rz-button variant="blue">Blue</rz-button>
-                          
+
 
                         </div>
 
@@ -133,16 +133,39 @@
                     </div>
                     <div class="tabs-ctn" id="card">
                         <h3>Card</h3>
+                        <h4>"Good design is as little design as possible."</h4>
 
-                        <div class="">
-
+                        <div class="demo">
+                            <rz-login-card></rz-login-card>
                         </div>
+
+                        <div class="code-snippet">
+                            <div class="snippet-header">
+                              <span>Login Card Component</span>
+                              <button class="copy-btn" onclick="navigator.clipboard.writeText('<rz-login-card></rz-login-card>')">
+                                Copy
+                              </button>
+                            </div>
+                            <pre><code class="language-html">&lt;rz-login-card&gt;&lt;/rz-login-card&gt;</code></pre>
+                          </div>
+
+                          <div id="context-card">
+
+                            <p>Our  component embodies this philosophy with:</p>
+                            <ul><li>Sleek monochrome aesthetics – Pure black background with crisp 1px borders</li></ul>
+                            <ul><li>Pixel-perfect spacing – Optimized padding and typography ratios</li></ul>
+                            <ul><li>Effortless integration – Works with any framework or vanilla JS</li></ul>
+                            <ul><li>Dark-mode ready – Reduced eye strain for extended viewing</li></ul>
+                          </div>
+
+
+                      
                     </div>
                 </div>
             </div>
         </div>
     </div>
-   
+
 
 
 
