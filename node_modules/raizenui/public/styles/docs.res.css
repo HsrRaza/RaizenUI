@@ -1,0 +1,13 @@
+@media (mix-width: 1260px) {
+    .right-container {
+        width: 80%;
+        height: 100vh;
+        margin-top: 1rem;
+        padding: .2rem .8rem;
+        border-radius: 1rem;
+        background-color: 	#121212;
+        
+    }
+    
+    
+}
