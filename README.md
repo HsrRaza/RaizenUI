@@ -30,17 +30,17 @@ yarn add raizen-ui
 
 
 ## Features needed to Add
-  -Complete Responsiveness
-  -Migrate to TypeScript/reatc.ts
-
+  -Complete Responsiveness  
+  -Migrate to TypeScript/reatc.ts  
+  
 ## Deployement
-  -Deployed In Vercel
-  Live Link :- https://raizenui.vercel.app/
+  -Deployed In Vercel  
+  Live Link :- https://raizenui.vercel.app/  
 
 ## Developer Note
-  -👨‍💻 Built as a beginner using HTML, CSS, and JS
-  -Gonna Learn more JS/TS/React 
-  -launch a more advanced version soon
+  -👨‍💻 Built as a beginner using HTML, CSS, and JS  
+  -Gonna Learn more JS/TS/React   
+  -launch a more advanced version soon  
 
 
 
