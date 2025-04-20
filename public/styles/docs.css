@@ -149,7 +149,7 @@ body {
     background-color: 	#121212;
     scrollbar-width: thin; 
     scrollbar-color: #5f5f7b #1e1e2f; 
-    overflow-y: auto;
+    /* overflow-y: auto; */
     
 }
 
