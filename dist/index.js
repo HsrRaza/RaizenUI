@@ -1,35 +1,32 @@
-// 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
+class RzButton extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.render();
+  }
 
-class MyButton extends HTMLElement {
-    constructor() {
-      super();
-      const shadow = this.attachShadow({ mode: 'open' });
-  
-      const button = document.createElement('button');
-      button.textContent = this.textContent || 'Click Me';
-      button.className = 'my-button'; // styling comes from global or shadow
-  
-      // Simple styles (optional)
-      const style = document.createElement('style');
-      style.textContent = `
-        .my-button {
-          padding: 0.5rem 1rem;
-          background-color: #1d4ed8;
-          color: white;
+  render() {
+    this.shadowRoot.innerHTML = `
+      <style>
+        button {
+          background-color: #ffffff;
+          color: #000000;
+          padding: 0.6rem 1.2rem;
+          font-size: 1rem;
           border: none;
           border-radius: 6px;
-          font-size: 1rem;
           cursor: pointer;
+          transition: all 0.3s ease-in-out;
         }
-  
-        .my-button:hover {
-          background-color: #2563eb;
+
+        button:hover {
+          background-color: #f0f0f0;
         }
-      `;
-  
-      shadow.append(style, button);
-    }
+      </style>
+      <button><slot>Click Me</slot></button>
+    `;
   }
+}
 
 class RzInput extends HTMLElement{
     static get observedAttributes(){
@@ -99,7 +96,7 @@ class RzInput extends HTMLElement{
     
 }
 
-customElements.define('rz-button', MyButton);
+customElements.define('rz-button', RzButton);
 customElements.define('rz-input', RzInput);
 
-export { MyButton, RzInput };
+export { RzButton, RzInput };
