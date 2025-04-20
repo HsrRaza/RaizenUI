@@ -3,7 +3,7 @@
 }
 
 #button h3{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #e5e5e5;
     margin-bottom: 1rem;
@@ -11,7 +11,7 @@
 }
 
 #button p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #e5e5e5;
     font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
@@ -50,7 +50,7 @@
     color: #D4D4D4;
     padding: 4px 8px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s;
   }
@@ -73,7 +73,7 @@
 
   code {
     font-family: 'Fira Code', monospace;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #e5e5e5;
   }
 
