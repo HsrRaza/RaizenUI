@@ -19,10 +19,12 @@ A lightweight, customizable UI component library built with modern web standards
 npm install raizenui
 # or
 yarn add raizen-ui
+```
 
 ```html 
 <!-- For latest version -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/raizenui@latest/dist/index.js"></script>
+```
 
 
 
