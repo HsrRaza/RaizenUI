@@ -9,7 +9,7 @@ function showContent(index) {
         content.classList.toggle('active', i === index);
     })
 }
-window.onload = () => showContent(2)
+window.onload = () => showContent(0)
 
 
 
