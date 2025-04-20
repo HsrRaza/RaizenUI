@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root {
+            /* Pure monochrome */
+            --bg-color: #000000;
+            /* True black background */
+            --border-color: #2a2a2a;
+            /* Dark grey borders (1px) */
+            --text-color: #ffffff;
+            /* Pure white text */
+            --input-bg: #111111;
+            /* Slightly off-black inputs */
+            --hover-grey: #333333;
+            /* Interactive element hover */
+        }
+
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: system, sans-serif;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        
+
+        input {
+            width: 80%;
+            padding: 8px 12px;
+            margin-bottom: 1rem;
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        input:focus {
+            outline: 1px solid white;
+        }
+
+        button {
+            width: 80%;
+            padding: 8px 12px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+
+        button:hover {
+            background: var(--hover-grey);
+        }
+
+
+        .login-container {
+            height: 250px;
+        width: 200px;
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 0; /* Sharp corners for modern look */
+    }
     
+    h2 {
+      text-align: center;
+      margin: 0 0 1.5rem 0;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+        
+    </style>
+        
+        
+        
+        
     <script type="module" src="./dist/index.js"></script>
 </head>
+
 <body>
-    
-    
+    <div class="box">
+
+
+        <!-- <div class="login-container">
+            <h2>Login</h2>
+            <label for="name">Name
+            </label>
+
+            <input type="text" name="name" id="" placeholder="Enter your name">
+            <label for="password">Password
+            </label>
+
+            <input type="password" name="password" id="">
+
+            <button>submit</button>
+        </div> -->
+
+        <rz-login-card></rz-login-card>
+
+    </div>
+
+
+
 </body>
+
 </html>

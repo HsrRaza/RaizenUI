@@ -1,6 +1,6 @@
 {
   "name": "raizenui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ui-components library",
   "main": "dist/index.js",
   "type": "module",
