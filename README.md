@@ -20,22 +20,26 @@ npm install raizenui
 # or
 yarn add raizen-ui
 
-
-### Via cdn
-```bash 
+```html 
 <!-- For latest version -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/raizenui@latest/dist/index.js"></script>
 
 
-##Features needed to Add
+
+
+## Features needed to Add
   -Complete Responsiveness
   -Migrate to TypeScript/reatc.ts
 
-##Deployement
+## Deployement
   -Deployed In Vercel
   Live Link :- https://raizenui.vercel.app/
 
-##Developer Note
-  -As a beginner I am made this using Html css js
-  -Gonna Learn more JS/TS/React and launch New Version 
+## Developer Note
+  -👨‍💻 Built as a beginner using HTML, CSS, and JS
+  -Gonna Learn more JS/TS/React 
+  -launch a more advanced version soon
 
+
+
+ 
